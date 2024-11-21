@@ -1,1 +1,25 @@
-<!-- <app-line></app-line> -->
+  <mat-toolbar color="primary" class="app-header">
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span [routerLink]="''">Charts</span>
+  </mat-toolbar>
+  
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav mode="over">
+      <p>
+       <app-side-menu (click)="sidenav.close()"></app-side-menu>
+      </p>
+      <!-- <button mat-button (click)="sidenav.close()">Close</button> -->
+    </mat-sidenav>
+  
+    <mat-sidenav-content (click)="sidenav.close()">
+      <div class="content">
+        <p>
+            <router-outlet></router-outlet>
+        </p>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  
+  

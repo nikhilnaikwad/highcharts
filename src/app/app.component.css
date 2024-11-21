@@ -1,0 +1,25 @@
+/* Fixed Header */
+.app-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  /* Offset for Sidenav Container */
+  .sidenav-container {
+    height: calc(100vh - 64px); /* Adjust for header height */
+    margin-top: 64px;
+  }
+  
+  /* Sidenav width */
+  mat-sidenav {
+    width: 250px;
+  }
+  
+  /* Main Content Styling */
+  .content {
+    padding: 16px;
+  }
+  

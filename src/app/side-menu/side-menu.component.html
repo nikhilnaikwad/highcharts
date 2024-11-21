@@ -1,0 +1,7 @@
+<mat-list role="list">
+    <mat-list-item role="listitem" *ngFor="let menu of menuItems">
+        <span (click)="createChart(menu.id)">{{menu.name}}</span>
+        <mat-divider></mat-divider>
+    </mat-list-item>
+    
+  </mat-list>

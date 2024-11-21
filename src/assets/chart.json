@@ -1,0 +1,22 @@
+[
+  {
+    "id":1,
+    "name": "Line Charts",
+    "content": "Basic line chart showing trends in a dataset."
+  },
+  {
+    "id":2,
+    "name": "Area Charts",
+    "content": "Basic area chart showing trends in a dataset."
+  },
+  {
+    "id":3,
+    "name": "Column & Bar Charts",
+    "content": "Basic column & bar chart showing trends in a dataset."
+  },
+  {
+    "id":4,
+    "name": "Pie Charts",
+    "content": "Basic pie chart showing trends in a dataset."
+  }
+]
