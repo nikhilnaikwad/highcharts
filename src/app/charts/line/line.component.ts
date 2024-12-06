@@ -17,6 +17,9 @@ export class LineComponent implements OnInit {
 
   createChart() {
     Highcharts.chart('chart-container', {
+      chart: {
+        type: 'line'
+      },
       title: {
         text: 'Sample Highcharts in Angular',
       },
@@ -35,6 +38,23 @@ export class LineComponent implements OnInit {
           data: [10, 20, 30, 40, 50],
         },
       ],
+      responsive: {
+        rules: [
+          {
+            condition: {
+              maxWidth: 600
+            },
+            chartOptions: {
+              chart: {
+                height: 200
+              },
+              legend: {
+                enabled: false
+              }
+            }
+          }
+        ]
+      }
     });
   }
 }

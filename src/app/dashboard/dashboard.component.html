@@ -1,4 +1,4 @@
-<mat-grid-list cols="3" rowHeight="2:1" gutterSize="16px">
+<mat-grid-list cols="4" rowHeight="2:1" gutterSize="16px">
     <mat-grid-tile *ngFor="let chart of chartData">
       <mat-card>
         <mat-card-header>
@@ -10,9 +10,9 @@
             {{chart.content}}
           </p>
         </mat-card-content>
-        <mat-card-actions>
-          <!-- <button mat-button>Action</button> -->
-        </mat-card-actions>
+        <!-- <mat-card-actions>
+          <button mat-button>Action</button>
+        </mat-card-actions> -->
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>

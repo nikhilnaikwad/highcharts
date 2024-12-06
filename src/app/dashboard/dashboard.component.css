@@ -4,11 +4,11 @@ mat-grid-tile {
     align-items: center;
   }
   mat-card-title{
-    font-size: 2em!important;
+    font-size: 3em!important;
   }
 
   mat-card-subtitle{
-    margin-left: 2em;
+    margin-left: 0.5em;
     font-size: 2em;
   }
   
